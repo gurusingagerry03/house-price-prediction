@@ -45,8 +45,3 @@ def predict(data: HouseInput):
         "min_estimate": int(min_estimate),
         "max_estimate": int(max_estimate)
     }
-
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run("api:app", host="0.0.0.0", port=port)
