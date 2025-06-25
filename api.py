@@ -4,6 +4,9 @@ import joblib
 import numpy as np
 import os
 
+print("❗ Checking for model file at runtime, exists?",
+      os.path.exists("house_price_model.pkl"))
+
 app = FastAPI(title="House Price Predictor API")
 
 # Load model and RMSE
