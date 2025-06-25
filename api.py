@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import numpy as np
+import os
+
 
 # Load model and RMSE
 loaded = joblib.load("house_price_model.pkl")
