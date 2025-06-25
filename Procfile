@@ -1,1 +1,1 @@
-PORT=8000 python3 -m uvicorn api:app --host=0.0.0.0 --port=$PORT
+web: -m uvicorn api:app --host=0.0.0.0 --port=${PORT}
